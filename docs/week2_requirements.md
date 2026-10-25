@@ -1,5 +1,4 @@
 # Requirements Specification: FloodWise MY
-Version: 1.0
 
 ## Section 0: Project Framing and Application Scope Checkpoint
 
