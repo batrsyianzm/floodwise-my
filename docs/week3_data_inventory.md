@@ -27,14 +27,6 @@
 | **Collection status** | Source identified in this README. Local content extraction not yet confirmed. | Source identified in this README. Local content extraction not yet confirmed. | To be finalised during Week 2 source audit. | To be finalised during Week 2 source audit. |
 | **Local file details** | Not stored as a redistributed official document in the repository. | Not stored as a redistributed official document in the repository. | To confirm after source audit. | To confirm after source audit. |
 
-### Data storage approach
-
-The GitHub repository currently stores source URLs, metadata and checked dates. Official source documents are not redistributed.
-
-The collected information should retain its source identity and date so that the system can provide traceable answers.
-
----
-
 ## 3. Inspection Evidence
 
 ### Inspection 1: ReliefWeb Malaysia Floods Nov 2025
