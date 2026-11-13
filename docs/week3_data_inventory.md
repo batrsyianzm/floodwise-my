@@ -1,28 +1,5 @@
 # FloodWise MY
 
-A document-grounded flood preparedness assistant for Malaysia, built as a source-cited RAG pipeline.
-
-> **Project limitation:** FloodWise MY provides information only. It does not replace official instructions from NADMA or local authorities.
-
-## Contents
-
-- [Objectives](#objectives)
-- [1. Required Data](#1-required-data)
-- [2. Source Records](#2-source-records)
-- [3. Inspection Evidence](#3-inspection-evidence)
-- [4. Open Items](#4-open-items)
-- [Part A: Data Preparation Plan](#part-a-data-preparation-plan)
-
-## Objectives
-
-O1, O2 and O3 are the project objective IDs used in this README. Exact FR, NFR and RAI IDs should be added only after checking the Topic 2 requirements document.
-
-- **O1:** Document-grounded flood preparedness assistant
-- **O2:** Source citations, evidence-grounded answers and abstention when evidence is insufficient
-- **O3:** Evaluation of answer quality and retrieval
-
----
-
 ## 1. Required Data
 
 | Requirement / Objective | Needed information / feature | Candidate source | Why usable / constraint |
@@ -49,14 +26,6 @@ O1, O2 and O3 are the project objective IDs used in this README. Exact FR, NFR a
 | **Access rights** | Publicly accessible website. Check individual report reuse conditions. | Publicly accessible website. Check individual report reuse conditions. | Publicly accessible website. Check applicable access and reuse conditions. | Publicly accessible website. Check applicable access and reuse conditions. |
 | **Collection status** | Source identified in this README. Local content extraction not yet confirmed. | Source identified in this README. Local content extraction not yet confirmed. | To be finalised during Week 2 source audit. | To be finalised during Week 2 source audit. |
 | **Local file details** | Not stored as a redistributed official document in the repository. | Not stored as a redistributed official document in the repository. | To confirm after source audit. | To confirm after source audit. |
-
-### Data storage approach
-
-The GitHub repository currently stores source URLs, metadata and checked dates. Official source documents are not redistributed.
-
-The collected information should retain its source identity and date so that the system can provide traceable answers.
-
----
 
 ## 3. Inspection Evidence
 
@@ -92,62 +61,3 @@ The collected information should retain its source identity and date so that the
 | 1 | The source is identified in the project data source list. | https://www.met.gov.my/ | Relevant candidate for official Malaysian weather warnings. |
 | 2 | Weather warnings can change over time. | Official meteorological warning information. | The warning issue/update date must be retained. |
 | 3 | The source audit is not yet finalised. | To be finalised during Week 2 source audit. | Confirm the relevant warning categories, access method and collection format before ingestion. |
-
-> **Inspection limitation:** The observations above describe the sources identified in this README. They do not confirm that local documents have been downloaded, parsed or successfully ingested. Actual extraction evidence, such as text samples, page counts or API responses, must be recorded after inspection in Google Colab.
-
----
-
-## 4. Open Items
-
-- [ ] Finalise the Public InfoBanjir (JPS) source audit.
-- [ ] Finalise the MetMalaysia warning source audit.
-- [ ] Confirm the exact data access and collection methods for JPS and MetMalaysia.
-- [ ] Record the publication dates and retrieval dates for the selected ReliefWeb reports.
-- [ ] Confirm the source reuse conditions and permissions before processing or redistributing content.
-- [ ] Prepare the approved source data in an appropriate format for the Colab pipeline.
-- [ ] Inspect the actual collected source data and record representative text samples or API responses.
-- [ ] Record the actual file size, page count and SHA-256 checksum for any locally collected files.
-- [ ] Create a source metadata record containing the source title, URL, organisation and date last checked.
-- [ ] Prepare the 30 to 50 manually verified benchmark questions for O3.
-- [ ] Verify that each benchmark answer has supporting evidence and a source reference.
-- [ ] Ensure that historical flood reports are not presented as current flood conditions.
-
----
-
-## Part A: Data Preparation Plan
-
-### A2. Google Colab Workspace
-
-Notebook: `week3_pipeline.ipynb`
-
-Workspace structure:
-
-```text
-week3_project/
-├── data/
-│   ├── raw/
-│   └── processed/
-└── notebooks/
-    └── week3_pipeline.ipynb
-```
-
-The raw folder will contain authorised collected source files or exports. The processed folder will contain extracted and prepared data.
-
-### A3. Data Inspection
-
-The selected data may include online reports, PDF/TXT documents and time-sensitive source information.
-
-The inspection process will check:
-
-- Source identity and URL.
-- Publication or update date.
-- File type or response format.
-- Extracted text or returned data fields.
-- Missing information and extraction limitations.
-- Whether the information is relevant to Malaysian flood preparedness.
-
-### A4. Data Inventory
-
-This inventory records the selected sources, their intended purpose, access status and inspection evidence.
-
-The original source information and metadata should be retained to support the source-cited RAG pipeline.
