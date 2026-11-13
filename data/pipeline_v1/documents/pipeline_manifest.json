@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-12T13:21:34.561959+00:00",
+  "data_type": "documents",
+  "configuration": {
+    "chunk_size": 500,
+    "method": "paragraph-aware"
+  },
+  "processing_method": "paragraph-aware text chunks of 500 characters",
+  "sources": [
+    {
+      "path": "/content/week3_project/data/raw/week3_data_inventory.pdf",
+      "sha256": "9603c1451bfc875fc012ff58b8ccddb8c1f593bc25522e57f9ef2652368a9466"
+    }
+  ],
+  "outputs": [
+    "/content/week3_project/data/pipeline_v1/documents/prepared_text.jsonl"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "/content/week3_project/data/raw/week3_data_inventory.pdf",
+      "output": "/content/week3_project/data/pipeline_v1/documents/prepared_text.jsonl"
+    }
+  ],
+  "inspection": {
+    "source": "week3_data_inventory.pdf",
+    "characters": 6877,
+    "pages": 6
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "3f59e693c2d3b5cb3e42cd0c07b63979fc37631974258de8546a55057fc31a68"
+    ],
+    "output_bytes": [
+      8887
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}

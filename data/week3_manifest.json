@@ -1,0 +1,17 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-12T13:21:29.801748+00:00",
+  "records": [
+    {
+      "source_id": "S01",
+      "source_filename": "week3_data_inventory.pdf",
+      "source_sha256": "9603c1451bfc875fc012ff58b8ccddb8c1f593bc25522e57f9ef2652368a9466",
+      "prepared_output": "data/processed/prepared_text.jsonl",
+      "prepared_sha256": "c88b5b47d2a3c3e8ea6db6dadd61257c792633ac42debb9c1223628dcb2a41e7",
+      "processing_note": "paragraph-aware-char-500",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    }
+  ]
+}
